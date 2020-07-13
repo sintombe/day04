@@ -9,11 +9,10 @@ int ft_iterative_power(int nb, int power){
 	if(power>0)
 		while (power >0)
 		{
-            for(int i=0;i<=power ;i++)
-            {
-                nb=nb * nb;
-                power--;
-            }
+            
+                nb=nb * ft_iterative_power(nb,power);
+                //power--;
+          
 			ft_putchar(nb);
 			 }
 			 

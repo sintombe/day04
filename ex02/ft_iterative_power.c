@@ -1,6 +1,17 @@
+ /* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_power.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sintombe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/17 08:30:14 by sintombe          #+#    #+#             */
+/*   Updated: 2020/07/17 08:37:14 by sintombe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 
-void ft_putchar(char c) { write(STDOUT_FILENO, &c, 1); }
+void ft_putchar(char c) { write(1, &c, 1); }
 int ft_iterative_power(int nb, int power){
 
 	int answer=1;
@@ -17,9 +28,5 @@ int ft_iterative_power(int nb, int power){
 			 }
 			 
 
-}
-int main()
-{
-ft_iterative_power(2,5);
 }
 

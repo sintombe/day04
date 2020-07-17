@@ -13,7 +13,7 @@
 #include <unistd.h>
 
 void ft_putchar(char c) {
-   	write(STDOUT_FILENO, &c, 1);
+   	write(1, &c, 1);
    }
 int ft_iterative_factorial(int nb){
 int factorial=1;
@@ -33,9 +33,4 @@ if (nb <= 0)
 }
 
 
-int main()
-{
-ft_iterative_factorial(5);
-return 0;
-}
 

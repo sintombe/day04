@@ -22,12 +22,3 @@ else
 
 
 }
-
-int main()
-{
-ft_recursive_factorial(5));
-    return 0;
-    //ft_recursive_factorial(5);
-}
-
-
